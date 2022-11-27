@@ -1,1 +1,2 @@
-# Text Editor Starter Code
+# Jim's Text Editor
+
