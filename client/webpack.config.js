@@ -22,9 +22,9 @@ module.exports = () => {
         title: "Webpack Plugin",
       }),
       new WebpackPwaManifest({
-        name: "JATE",
+        name: "Jim's Awesome Text Editor",
         short_name: "JATE",
-        description: "Jim's Awesome Text Editor",
+        description: 'Add notes and code snippets with or without an internet connection!',
         display: "standalone",
         background_color: "#1e1e1e",
         theme_color: "#1e1e1e",
@@ -45,7 +45,7 @@ module.exports = () => {
         swDest: "service-worker.js",
       }),
 
-    // Adding CSS loaders and babel to webpack.
+   
     new WebpackPwaManifest({
       fingerprints: false,
       inject: true,
@@ -65,6 +65,7 @@ module.exports = () => {
       ],
     }),
   ],
+   // Adding CSS loaders and babel to webpack.
     module: {
       rules: [
         {
