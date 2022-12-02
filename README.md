@@ -1,2 +1,2 @@
-# Jim's Text Editor
+# Jim's Awesome Text Editor
 
