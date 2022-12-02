@@ -521,7 +521,7 @@
                 for (;;)
                   switch ((t.prev = t.next)) {
                     case 0:
-                      prompt(),
+                     e.prompt(),
                         i.setAttribute("disabled", !0),
                         (i.textContent = "Installed!");
                     case 3:
