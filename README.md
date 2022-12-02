@@ -8,15 +8,12 @@ AS A DEVELOPER:
 * I WANT: to create notes or code snippets with or without an internet connection.
 * SO THAT: I can reliably retrieve them for later use.
 
-## Built-With:
+## Built Using:
 * babel
 * webpack
 * workbox
 * concurrently
 * idb
-
-## Contribution:
-Made by Dhabi966
 
 ## Screenshots:
 The web application in browser and a view of the manifest.
@@ -25,3 +22,4 @@ The web application in browser and a view of the manifest.
 [Visit the Live Website here]()
 
 ## GitHub Repo
+https://github.com/Dhabi966/JimsTextEditor
