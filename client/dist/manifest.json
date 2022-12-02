@@ -31,12 +31,12 @@
       "type": "image/png"
     }
   ],
-  "name": "Jim's Awesome Text Editor",
+  "name": "Jims Awesome Text Editor",
   "short_name": "JATE",
   "orientation": "portrait",
   "display": "standalone",
-  "start_url": "/",
-  "description": "Create notes and code snippets with or without an internet connection!",
+  "start_url": "./",
+  "description": "Add notes and code snippets with or without an internet connection!",
   "background_color": "#225ca3",
   "theme_color": "#225ca3"
 }
