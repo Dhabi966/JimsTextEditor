@@ -18,7 +18,7 @@ AS A DEVELOPER:
 ## Screenshots:
 The web application in browser and a view of the manifest.
 
-\images\Manifest.js Screenshot.png
+
 
 ## Live Site: 
 [Visit the Live Website here](https://jimstextexteditor.herokuapp.com/)
