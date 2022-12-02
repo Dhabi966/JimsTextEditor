@@ -21,17 +21,23 @@ module.exports = () => {
         template: "./index.html",
         title: "Webpack Plugin",
       }),
+
+      new InjectManifest({
+        swSrc: "./src-sw.js",
+        swDest: "src-sw.js",
+      }),
+
       new WebpackPwaManifest({
-        name: "Jim's Awesome Text Editor",
-        short_name: "JATE",
-        description: 'Add notes and code snippets with or without an internet connection!',
-        display: "standalone",
-        background_color: "#1e1e1e",
-        theme_color: "#1e1e1e",
-        start_url: "/",
-        publicPath: "/",
         fingerprints: false,
         inject: true,
+        name: "Jims Awesome Text Editor",
+        short_name: "JATE",
+        description:
+          "Add notes and code snippets with or without an internet connection!",
+        background_color: "#225ca3",
+        theme_color: "#225ca3",
+        start_url: "./",
+        publicPath: "./",
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
@@ -40,32 +46,8 @@ module.exports = () => {
           },
         ],
       }),
-      new InjectManifest({
-        swSrc: "./src-sw.js",
-        swDest: "service-worker.js",
-      }),
-
-   
-    new WebpackPwaManifest({
-      fingerprints: false,
-      inject: true,
-      name: 'Jims Awesome Text Editor',
-      short_name: 'JATE',
-      description: 'Add notes and code snippets with or without an internet connection!',
-      background_color: '#225ca3',
-      theme_color: '#225ca3',
-      start_url: './',
-      publicPath: './',
-      icons: [
-        {
-          src: path.resolve('src/images/logo.png'),
-          sizes: [96, 128, 192, 256, 384, 512],
-          destination: path.join('assets', 'icons'),
-        },
-      ],
-    }),
-  ],
-   // Adding CSS loaders and babel to webpack.
+    ],
+    // Adding CSS loaders and babel to webpack.
     module: {
       rules: [
         {
@@ -83,6 +65,10 @@ module.exports = () => {
             loader: "babel-loader",
             options: {
               presets: ["@babel/preset-env"],
+              plugins: [
+                "@babel/plugin-proposal-object-rest-spread",
+                "@babel/transform-runtime",
+              ],
             },
           },
         },
