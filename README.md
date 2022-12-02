@@ -16,7 +16,8 @@ AS A DEVELOPER:
 * idb
 
 ## Screenshots:
-The web application in browser and a view of the manifest.
+Manifest.js
+image.png
 
 
 
