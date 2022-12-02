@@ -1,5 +1,5 @@
 {
-  "name": "JimsTextEditor",
+  "name": "jimsawesometexteditor",
   "version": "1.0.0",
   "description": "A simple, yet awesome text editor",
   "main": "server.js",
