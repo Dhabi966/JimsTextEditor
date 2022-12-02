@@ -1,7 +1,7 @@
 {
   "name": "JimsTextEditor",
   "version": "1.0.0",
-  "description": "A simple text editor",
+  "description": "A simple, yet awesome text editor",
   "main": "server.js",
   
   "engines":{
