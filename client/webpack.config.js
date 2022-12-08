@@ -7,7 +7,7 @@ const { InjectManifest } = require("workbox-webpack-plugin");
 
 module.exports = () => {
   return {
-    mode: "production",
+    mode: "development",
     entry: {
       main: "./src/js/index.js",
       install: "./src/js/install.js",
@@ -19,7 +19,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: "Webpack Plugin",
+        title: "JATE",
       }),
 
       new InjectManifest({
@@ -36,8 +36,8 @@ module.exports = () => {
           "Add notes and code snippets with or without an internet connection!",
         background_color: "#225ca3",
         theme_color: "#225ca3",
-        start_url: "./",
-        publicPath: "./",
+        start_url: "/",
+        publicPath: "/",
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
@@ -55,12 +55,8 @@ module.exports = () => {
           use: ["style-loader", "css-loader"],
         },
         {
-          test: /\.(png|svg|jpg|jpeg|gif)$/i,
-          type: "asset/resource",
-        },
-        {
           test: /\.m?js$/,
-          exclude: /(node_modules|bower_components)/,
+          exclude: /node_modules/,
           use: {
             loader: "babel-loader",
             options: {
